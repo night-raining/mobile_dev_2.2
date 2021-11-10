@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_quote_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:textSize="24sp" />
+
+        <LinearLayout android:id="@+id/ll_quote_cont1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/tv_quote_id"
+            android:layout_marginLeft="12dp">
+            <TextView
+                android:id="@+id/tv_quote_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quote"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+            <TextView
+                android:id="@+id/tv_quote_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="Author" />
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_quotePhoto"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/cat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/tv_quote_series"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:text="Series"
+            android:layout_below="@id/iv_quotePhoto"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

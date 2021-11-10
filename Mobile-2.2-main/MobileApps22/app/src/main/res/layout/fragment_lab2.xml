@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab2.Lab2Fragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <Button android:id="@+id/btn_toVideoActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_margin="2dp"
+            android:text="To video activity"/>
+        <Button android:id="@+id/btn_toCameraActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_margin="2dp"
+            android:text="To camera activity"/>
+    </LinearLayout>
+
+</FrameLayout>

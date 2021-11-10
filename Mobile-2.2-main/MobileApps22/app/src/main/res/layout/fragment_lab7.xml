@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".lab7.Lab7Fragment">
+
+<!--    <ProgressBar android:id="@+id/pb_chat_loading"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <Button android:id="@+id/btn_chat_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close ws"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+        <EditText android:id="@+id/et_chat"
+            android:minWidth="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <Button android:id="@+id/btn_chat_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"/>
+    </LinearLayout>
+
+</LinearLayout>

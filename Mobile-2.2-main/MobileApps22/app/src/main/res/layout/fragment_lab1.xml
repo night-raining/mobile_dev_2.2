@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab1.Lab1Fragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+        <GridLayout
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:columnCount="4"
+            android:rowCount="8"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_hi" android:text="Button view" android:layout_columnSpan="4" android:layout_gravity="fill_horizontal"/>
+            <LinearLayout android:layout_columnSpan="4" android:layout_rowSpan="3" android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Check 1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Check 2"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Check 3"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="20sp" android:textStyle="italic" android:fontFamily="sans-serif-smallcaps" android:gravity="center" android:text="Fancy label"  android:layout_columnSpan="4"/>
+            <LinearLayout android:gravity="center" android:layout_columnSpan="2" android:layout_gravity="fill_horizontal" android:orientation="horizontal">
+                <TextView android:layout_margin="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Progress bar:"/>
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:layout_column="0" android:gravity="center" android:layout_rowSpan="2" android:layout_gravity="fill_horizontal" android:orientation="horizontal">
+                <TextView android:layout_margin="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Long press button:"/>
+                <Button android:id="@+id/btn_longpress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LONG PRESS ME"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+            <EditText android:layout_column="0" android:layout_width="100dp"
+                android:hint="Text input"/>
+        </GridLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

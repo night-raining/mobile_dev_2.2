@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab4.Lab4Fragment">
+
+    <RelativeLayout android:id="@+id/rl_gAccContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_gAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_gAvatar"
+            android:orientation="vertical">
+            <TextView android:id="@+id/tv_gId"
+                android:text="id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_gName"
+                android:text="name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_gMail"
+                android:text="mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tv_gIdToken"
+                android:text="token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_deauth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign out"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</RelativeLayout>

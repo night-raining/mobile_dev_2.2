@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MobileApps2.2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="server_client_id">701824512890-kfgpghf7q115hgk1vvn7jtc1on77c83b.apps.googleusercontent.com</string>
+</resources>

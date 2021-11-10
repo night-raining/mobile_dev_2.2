@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab6.Lab6Fragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_btnPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:scrollIndicators="right">
+        <Button android:id="@+id/btn_generate"
+            android:text="Generate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button android:id="@+id/btn_encrypt"
+            android:text="Encrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button android:id="@+id/btn_decrypt"
+            android:text="Decrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last log"
+            android:textSize="24dp"/>
+        <TextView android:id="@+id/tv_log"
+            android:text="Last log message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Secret key"
+            android:textSize="24dp"/>
+        <TextView android:id="@+id/tv_secretKey"
+            android:text="Current generated key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="File content"
+            android:textSize="24dp"/>
+        <TextView android:id="@+id/tv_fileContent"
+            android:text="File content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
